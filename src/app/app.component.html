@@ -1,3 +1,24 @@
-<h1>
-  {{title}}
-</h1>
+<nav class="navbar navbar-static-top navbar-dark bg-inverse">
+  <a class="navbar-brand" href="#">Get Lab</a>
+  <ul class="nav navbar-nav">
+    <li routerLinkActive="active"
+        class="nav-item active">
+      <a class="nav-link"
+         routerLink="/greeting">Greeting</a>
+    </li>
+    <li routerLinkActive="active"
+        class="nav-item">
+      <a class="nav-link"
+         routerLink="/textbook">Textbook</a>
+    </li>
+    <li routerLinkActive="active"
+        class="nav-item">
+      <a class="nav-link"
+         routerLink="/questionnaire">Questionnaire</a>
+    </li>
+  </ul>
+</nav>
+
+<h1>{{title}}</h1>
+
+<router-outlet></router-outlet>
