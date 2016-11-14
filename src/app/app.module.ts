@@ -8,6 +8,7 @@ import { GreetingComponent } from './greeting/greeting.component';
 import { TextbookComponent } from './textbook/textbook.component';
 import { QuestionnaireComponent } from './questionnaire/questionnaire.component';
 import { RouterModule, Routes } from '@angular/router';
+import { UploaderComponent } from './uploader/uploader.component';
 
 const routes: Routes = [
   {
@@ -34,7 +35,8 @@ const routes: Routes = [
     AppComponent,
     GreetingComponent,
     TextbookComponent,
-    QuestionnaireComponent
+    QuestionnaireComponent,
+    UploaderComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,13 @@
+{
+  "name": "Course name",
+  "lessons": [
+    {
+      "name": "lesson name 1",
+      "url": "lesson-1.json"
+    },
+    {
+      "name": "lesson name 2",
+      "url": "lesson-2.json"
+    }
+  ]
+}
