@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { LessonService } from '../lesson.service';
+import {Component, OnInit} from '@angular/core';
+import {Route, Router} from '@angular/router'
+import {LessonService} from '../lesson.service';
 
 @Component({
   selector: 'app-greeting',
@@ -8,11 +9,13 @@ import { LessonService } from '../lesson.service';
   providers: [LessonService]
 })
 export class GreetingComponent implements OnInit {
-  public getCourse(){
-    this.lessonService.getCourse();
+  public getCourse() {
+    this.lessonService.loadCourse();
+    this._router.navigateByUrl('/textbook');
   };
 
-  constructor(private lessonService : LessonService) { }
+  constructor(private lessonService: LessonService, private _router: Router) {
+  }
 
   ngOnInit() {
   }
