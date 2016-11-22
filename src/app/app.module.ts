@@ -1,3 +1,5 @@
+import './rxjs-extensions';
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -5,10 +7,11 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { GreetingComponent } from './greeting/greeting.component';
-import { TextbookComponent } from './textbook/textbook.component';
-import { QuestionnaireComponent } from './questionnaire/questionnaire.component';
+
 import { RouterModule, Routes } from '@angular/router';
-import { UploaderComponent } from './uploader/uploader.component';
+import { SummaryComponent } from './summary/summary.component';
+import { VacancyComponent } from './vacancy/vacancy.component';
+
 
 const routes: Routes = [
   {
@@ -21,12 +24,12 @@ const routes: Routes = [
     component: GreetingComponent
   },
   {
-    path: 'textbook',
-    component: TextbookComponent
+    path: 'summary',
+    component: SummaryComponent
   },
   {
-    path: 'questionnaire',
-    component: QuestionnaireComponent
+    path: 'vacancy',
+    component: VacancyComponent
   }
 ];
 
@@ -34,9 +37,8 @@ const routes: Routes = [
   declarations: [
     AppComponent,
     GreetingComponent,
-    TextbookComponent,
-    QuestionnaireComponent,
-    UploaderComponent
+    SummaryComponent,
+    VacancyComponent
   ],
   imports: [
     BrowserModule,
